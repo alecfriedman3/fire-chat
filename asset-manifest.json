@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fire-chat/static/css/main.073c9b0a.css",
+    "main.js": "/fire-chat/static/js/main.8e61abaf.js",
+    "static/js/787.d83dca0f.chunk.js": "/fire-chat/static/js/787.d83dca0f.chunk.js",
+    "index.html": "/fire-chat/index.html",
+    "main.073c9b0a.css.map": "/fire-chat/static/css/main.073c9b0a.css.map",
+    "main.8e61abaf.js.map": "/fire-chat/static/js/main.8e61abaf.js.map",
+    "787.d83dca0f.chunk.js.map": "/fire-chat/static/js/787.d83dca0f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.8e61abaf.js"
+  ]
+}

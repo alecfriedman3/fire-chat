@@ -85,8 +85,15 @@ function App() {
           />
         }
         <button onClick={async () => {
-          joinRoom();
-          setJoinedRoom(true);
+          try {
+            console.log('joining room')
+            await joinRoom();
+            setJoinedRoom(true);
+            console.log('joined room?')
+          } catch (e) {
+            console.error(e);
+            alert(e.message);
+          }
         }}>JOIN ROOM</button>
       </div>
       {roomId && <>

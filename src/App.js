@@ -71,8 +71,13 @@ function App() {
         <>
           <button
               onClick={async () => {
-                createRoom();
-                setJoinedRoom(true);
+                try {
+                  await createRoom();
+                  setJoinedRoom(true);
+                } catch(e) {
+                  console.error(e);
+                  alert('Failed to create room,', e.message);
+                }
               }}
           >CREATE ROOM</button>
       </>}
@@ -86,10 +91,8 @@ function App() {
         }
         <button onClick={async () => {
           try {
-            console.log('joining room')
             await joinRoom();
             setJoinedRoom(true);
-            console.log('joined room?')
           } catch (e) {
             console.error(e);
             alert(e.message);
